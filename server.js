@@ -104,6 +104,6 @@ var Lista = mongoose.model( 'Lista' , {
         })
  } )
 
-app.listen( 8080 , function(){
+app.listen(process.env.PORT || 8080, function(){
     console.log("el servidor funciona correctamente");
 } )
